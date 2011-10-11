@@ -22,7 +22,7 @@
 
 - (void)dealloc
 {
-    NSLog(@"Page 2 cleaning up");
+   
     [super dealloc];
 }
 

@@ -23,7 +23,7 @@
 
 - (void)dealloc
 {
-    NSLog(@"Root cleaning up");
+    
     [super dealloc];
 }
 
@@ -49,10 +49,8 @@
     [self setP1VC:viewController];
 	[viewController release];
     
-    
     [super onNextPageClick:sender];
-    NSLog(@"Clicked on iPhone too");
-    [btnNext setTitle:@"Clicked on iPhone" forState:UIControlStateNormal];
+   
 }
 
 - (void)viewDidUnload

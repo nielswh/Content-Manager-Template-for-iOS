@@ -22,10 +22,7 @@
 
 - (void)dealloc
 {
-    NSLog(@"Page 1 cleaning up");
     [super dealloc];
-    [p2VC release];
-    p2VC = nil;
 }
 
 - (void)didReceiveMemoryWarning

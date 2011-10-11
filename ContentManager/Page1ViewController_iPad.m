@@ -7,6 +7,7 @@
 //
 
 #import "Page1ViewController_iPad.h"
+#import "Page2ViewController_iPad.h"
 
 
 @implementation Page1ViewController_iPad
@@ -51,6 +52,14 @@
 {
     // Return YES for supported orientations
 	return YES;
+}
+
+- (IBAction) onNextPageClick:(id)sender {
+    Page2ViewController_iPad *viewController = [[Page2ViewController_iPad alloc] initWithNibName:@"Page2ViewController_iPad" bundle:nil];
+    [self setP2VC:viewController];
+	[viewController release];
+    
+    [super onNextPageClick:sender];
 }
 
 @end

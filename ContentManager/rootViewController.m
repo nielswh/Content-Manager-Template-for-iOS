@@ -26,6 +26,7 @@
 
 - (void)dealloc
 {
+    NSLog(@"Root cleaning up");
     [super dealloc];
 }
 

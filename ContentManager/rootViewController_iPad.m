@@ -34,9 +34,7 @@
     [super viewDidLoad];
     NSLog(@"Load from iPad Controller");
     
-    Page1ViewController_iPad *viewController = [[Page1ViewController_iPad alloc] initWithNibName:@"Page1ViewController_iPad" bundle:nil];
-    [self setP1VC:viewController];
-	[viewController release];
+   
 }
 
 - (void)viewDidUnload
@@ -54,8 +52,12 @@
 
 -(IBAction) onNextPageClick: (id) sender {
     
+    
+    Page1ViewController_iPad *viewController = [[Page1ViewController_iPad alloc] initWithNibName:@"Page1ViewController_iPad" bundle:nil];
+    [self setP1VC:viewController];
+	[viewController release];
+    
     [super onNextPageClick:sender];
-    [self changeBackgroundColor];
     
 }
 

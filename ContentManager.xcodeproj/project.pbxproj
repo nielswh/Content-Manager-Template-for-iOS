@@ -156,12 +156,12 @@
 				8C3B881B14420A2600AC8549 /* MainWindow_iPhone.xib */,
 				8CEE4EDE14423B9500779A13 /* rootViewController_iPhone.h */,
 				8CEE4EDF14423B9500779A13 /* rootViewController_iPhone.m */,
-				8CEE4EE014423B9500779A13 /* rootViewController_iPhone.xib */,
 				8C84711314438382006FD57D /* Page1ViewController_iPhone.h */,
 				8C84711414438382006FD57D /* Page1ViewController_iPhone.m */,
-				8C84711514438382006FD57D /* Page1ViewController_iPhone.xib */,
 				8C8471201443895D006FD57D /* Page2ViewController_iPhone.h */,
 				8C8471211443895D006FD57D /* Page2ViewController_iPhone.m */,
+				8CEE4EE014423B9500779A13 /* rootViewController_iPhone.xib */,
+				8C84711514438382006FD57D /* Page1ViewController_iPhone.xib */,
 				8C8471221443895D006FD57D /* Page2ViewController_iPhone.xib */,
 			);
 			name = iPhone;
@@ -175,12 +175,12 @@
 				8C3B882214420A2600AC8549 /* MainWindow_iPad.xib */,
 				8CEE4EE314423E0F00779A13 /* rootViewController_iPad.h */,
 				8CEE4EE414423E0F00779A13 /* rootViewController_iPad.m */,
-				8CEE4EE514423E0F00779A13 /* rootViewController_iPad.xib */,
 				8C84711814438620006FD57D /* Page1ViewController_iPad.h */,
 				8C84711914438620006FD57D /* Page1ViewController_iPad.m */,
-				8C84711A14438620006FD57D /* Page1ViewController_iPad.xib */,
 				8C84712514438976006FD57D /* Page2ViewController_iPad.h */,
 				8C84712614438976006FD57D /* Page2ViewController_iPad.m */,
+				8CEE4EE514423E0F00779A13 /* rootViewController_iPad.xib */,
+				8C84711A14438620006FD57D /* Page1ViewController_iPad.xib */,
 				8C84712714438976006FD57D /* Page2ViewController_iPad.xib */,
 			);
 			name = iPad;
