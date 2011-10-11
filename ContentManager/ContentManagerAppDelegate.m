@@ -3,7 +3,7 @@
 //  ContentManager
 //
 //  Created by Niels Hansen on 10/9/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Agilite Software. All rights reserved.
 //
 
 #import "ContentManagerAppDelegate.h"
@@ -52,11 +52,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    /*
-     Called when the application is about to terminate.
-     Save data if appropriate.
-     See also applicationDidEnterBackground:.
-     */
+    NSLog(@"App Closing"); 
 }
 
 - (void)dealloc
