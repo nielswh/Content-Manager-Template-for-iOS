@@ -26,6 +26,9 @@
 
 - (void)dealloc
 {
+    NSLog(@"Page 1 cleaning up");
+    [p2VC release];
+    p2VC = nil;
     [super dealloc];
 }
 
