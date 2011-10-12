@@ -26,6 +26,9 @@ Since the Content Manager is a Singleton, it can be used to hold state.
 ## Blog for Project ##
 More information about the project can be found at [the agilite software blog](http://www.agilitesoftware.com/blog)
 
+## Twitter account ##
+Keep up to date on announcements and more by following Agilite Software on Twitter, <a href="http://twitter.com/agilite">@agilite</a>.
+
 ## MIT License ##
 
 Copyright (c) 2011 Agilite Software
