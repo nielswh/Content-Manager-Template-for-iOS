@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 
 @interface ContentManager : NSObject {
@@ -17,6 +18,12 @@
 }
 
 @property (nonatomic, retain) UIViewController  *prevViewController;
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (void)saveContext;
+- (NSURL *)applicationDocumentsDirectory;
 
 + (ContentManager *)sharedContentManager;
 -(void) goBackFromView:(UIViewController*) currentViewController goBack:(int)popOff;

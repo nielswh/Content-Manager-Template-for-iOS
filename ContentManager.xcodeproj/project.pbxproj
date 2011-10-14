@@ -10,6 +10,8 @@
 		8C3B880614420A2600AC8549 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3B880514420A2600AC8549 /* UIKit.framework */; };
 		8C3B880814420A2600AC8549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3B880714420A2600AC8549 /* Foundation.framework */; };
 		8C3B880A14420A2600AC8549 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3B880914420A2600AC8549 /* CoreGraphics.framework */; };
+		8C873012144812B300975B9E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C873011144812B300975B9E /* CoreData.framework */; };
+		8C8730171448145800975B9E /* ContentManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C8730151448145800975B9E /* ContentManager.xcdatamodeld */; };
 		8CCB7C791444BD7000449035 /* Page2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB7C761444BD7000449035 /* Page2ViewController.m */; };
 		8CCB7C7A1444BD7000449035 /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB7C781444BD7000449035 /* rootViewController.m */; };
 		8CCB7C7D1444BD8800449035 /* ContentManagerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB7C7C1444BD8700449035 /* ContentManagerAppDelegate.m */; };
@@ -40,6 +42,8 @@
 		8C3B880514420A2600AC8549 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8C3B880714420A2600AC8549 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8C3B880914420A2600AC8549 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8C873011144812B300975B9E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8C8730161448145800975B9E /* ContentManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContentManager.xcdatamodel; sourceTree = "<group>"; };
 		8CCB7C741444BD7000449035 /* Page1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Page1ViewController.h; path = ContentManagerExamples/ViewControllers/Page1ViewController.h; sourceTree = SOURCE_ROOT; };
 		8CCB7C751444BD7000449035 /* Page2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Page2ViewController.h; path = ContentManagerExamples/ViewControllers/Page2ViewController.h; sourceTree = SOURCE_ROOT; };
 		8CCB7C761444BD7000449035 /* Page2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Page2ViewController.m; path = ContentManagerExamples/ViewControllers/Page2ViewController.m; sourceTree = SOURCE_ROOT; };
@@ -86,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C873012144812B300975B9E /* CoreData.framework in Frameworks */,
 				8C3B880614420A2600AC8549 /* UIKit.framework in Frameworks */,
 				8C3B880814420A2600AC8549 /* Foundation.framework in Frameworks */,
 				8C3B880A14420A2600AC8549 /* CoreGraphics.framework in Frameworks */,
@@ -119,6 +124,7 @@
 				8C3B880514420A2600AC8549 /* UIKit.framework */,
 				8C3B880714420A2600AC8549 /* Foundation.framework */,
 				8C3B880914420A2600AC8549 /* CoreGraphics.framework */,
+				8C873011144812B300975B9E /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 		8C3B880B14420A2600AC8549 /* ContentManagerExamples */ = {
 			isa = PBXGroup;
 			children = (
+				8C8730141448143900975B9E /* Models */,
 				8CCB7C7B1444BD8700449035 /* ContentManagerAppDelegate.h */,
 				8CCB7C7C1444BD8700449035 /* ContentManagerAppDelegate.m */,
 				8CEE4ED914423B0800779A13 /* ViewControllers */,
@@ -189,11 +196,19 @@
 		8C3B882A14420A5400AC8549 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				8CCB7CB31444BE7B00449035 /* ContentManager.m */,
 				8CCB7CB41444BE7B00449035 /* ContentManager.h */,
+				8CCB7CB31444BE7B00449035 /* ContentManager.m */,
 				8CCB7CB51444BE7B00449035 /* SynthesizeSingleton.h */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		8C8730141448143900975B9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C8730151448145800975B9E /* ContentManager.xcdatamodeld */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		8CCB7C801444BD9D00449035 /* en.lproj */ = {
@@ -316,6 +331,7 @@
 				8CCB7CB21444BDD000449035 /* main.m in Sources */,
 				8CCB7CB61444BE7B00449035 /* ContentManager.m in Sources */,
 				8CE51D3E1444BF8200A18BB9 /* Page1ViewController.m in Sources */,
+				8C8730171448145800975B9E /* ContentManager.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +451,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C8730151448145800975B9E /* ContentManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C8730161448145800975B9E /* ContentManager.xcdatamodel */,
+			);
+			currentVersion = 8C8730161448145800975B9E /* ContentManager.xcdatamodel */;
+			path = ContentManager.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8C3B87F814420A2600AC8549 /* Project object */;
 }
